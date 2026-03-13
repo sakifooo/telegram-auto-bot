@@ -34,7 +34,9 @@ def main():
 
     print("البوت غادي يبدأ polling...")
     print(f"Chat ID li ghadi nshddo: {CHAT_ID}")
-
+# قبل application.run_polling()
+await application.bot.delete_webhook(drop_pending_updates=True)
+print("Webhook تم مسحو + pending updates تم تجاهلهم")
     # Long polling (الأسهل و الأكثر استقرار على Koyeb)
     application.run_polling(
         allowed_updates=["message", "callback_query"],
