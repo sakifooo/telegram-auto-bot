@@ -2,7 +2,7 @@ import asyncio
 from telegram.ext import Application, CommandHandler
 
 # Token و Chat ID
-TOKEN = "8636119556:AAHN2lW72qjFB1nUdYzpAPFdLmeNtJvBcGQ"
+TOKEN = "8636119556:AAF2d3Ov0J4aUkXMAF6ui9NRoJHPdC9yELw"
 CHAT_ID = 6280782710
 
 async def send_startup_message(application):
